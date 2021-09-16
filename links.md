@@ -1,10 +1,10 @@
 ---
-permalink: /links/
+permalink: /LINKS/
 ---
 
 
 
- [Homepage](https://bimabara.github.io/os212) | [GitHub](https://github.com/Bimabara/os212) | [LOG](https://raw.githubusercontent.com/Bimabara/os212/master/TXT/mylog.txt) | [Links](https://bimabara.github.io/os212/links/)|
+ [Homepage](https://bimabara.github.io/os212) | [GitHub](https://github.com/Bimabara/os212) | [LOG](https://raw.githubusercontent.com/Bimabara/os212/master/TXT/mylog.txt) | [LINKS](https://bimabara.github.io/os212/LINKS/)|
 
 
 ## LINKS
