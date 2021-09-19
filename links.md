@@ -61,3 +61,25 @@ Bitcoin has the most crime reports of any cryptocurrency, which makes sense sinc
 
 While neither Linux or Windows can claim to be 100% bulletproof, the perceived wisdom is that Linux is more secure than Windows. We try to find out if that’s the case.
 
+6. [Learn C](https://www.udemy.com/course/c-programming-2019-master-the-basics/?ranMID=39197&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-lrANzMrGn2qppb3R624ycA&LSNPUBID=JVFxdTr9V80&utm_source=aff-campaign&utm_medium=udemyads)
+
+This course is for total Beginners, you will learn how to code using the  C Programming Language in an easy, simple, and efficient way.
+
+7. [Learn C (again)](https://www.learn-c.org/)
+
+Whether you are an experienced programmer or not, this website is intended for everyone who wishes to learn the C programming language.
+There is no need to download anything - Just click on the chapter you wish to begin from, and follow the instructions.
+
+8. [Why is the C language important?](https://www.toptal.com/c/after-all-these-years-the-world-is-still-powered-by-c-programming)
+
+Despite the prevalence of higher-level languages, the C programming language continues to empower the world. There are plenty of reasons to believe that C programming will remain active for a long time. Here are some reasons that C is unbeatable, and almost mandatory, for certain applications.
+
+9. [Cybersecurity](https://glints.com/id/lowongan/cybersecurity-adalah/#.YUcyErgzZhE)
+
+cybersecurity adalah proses perlindungan sistem, data, jaringan, dan program dari ancaman atau serangan digital.
+Biasanya, serangan ini dilakukan oleh pihak tak bertanggung jawab untuk berbagai macam hal.
+Beberapa contohnya adalah mengakses informasi sensitif, atau bahkan mengubah dan menghancurkan data penting.
+
+10. [The Importance of Digital Security](https://www.springworks.in/blog/importance-of-digital-security/)
+
+Cybercrime cost the world around $600 billion in 2017. Further, a report suggests that 63% of Indian businesses are concerned about falling prey to cybercrimes. Lack of cybersecurity is posing a great threat of data theft or unethical hacks in organizations. 
