@@ -118,4 +118,10 @@ This page is mostly foundation information. It's kinda boring but essential stuf
 
 As the virtual machine will most probably expect to see a hard disk built into its virtual computer, Oracle VM VirtualBox must be able to present real storage to the guest as a virtual hard disk.
 
-## 9. [
+## 9. [Linux File System](https://www.javatpoint.com/linux-file-system)<br>
+
+A Linux file system is a structured collection of files on a disk drive or a partition. A partition is a segment of memory and contains some specific data. In our machine, there can be various partitions of the memory. Generally, every partition contains a file system.
+
+## 10. [Linux Filesystem Hierarchy Standard](https://www.javatpoint.com/linux-file-hierarchy-system)<br>
+
+Filesystem hierarchy standard describes directory structure and its content in Unix and Unix like operating system. It explains where files and directories should be located and what it should contain.
