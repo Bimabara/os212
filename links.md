@@ -169,7 +169,7 @@ The Pointer in C, is a variable that stores address of another variable. A point
 
 It depends. Windows and Linux may not use RAM in exactly the same way, but they are ultimately doing the same thing. So which one uses less RAM?
 
-#WEEK 5
+# WEEK 5
 
 ## 1. [Demand Paging in OS](https://digitalthinkerhelp.com/demand-paging-in-os-operating-system-examples-advantages-working/)<br>
 
