@@ -168,3 +168,49 @@ The Pointer in C, is a variable that stores address of another variable. A point
 ## 10. [Does Linux Use Less RAM Than Windows?](https://www.makeuseof.com/tag/linux-windows-ram/)<br>
 
 It depends. Windows and Linux may not use RAM in exactly the same way, but they are ultimately doing the same thing. So which one uses less RAM?
+
+#WEEK 5
+
+## 1. [Demand Paging in OS](https://digitalthinkerhelp.com/demand-paging-in-os-operating-system-examples-advantages-working/)<br>
+
+Demand paging is a process of swapping in the Virtual Memory system. In this process, all data is not moved from hard drive to main memory because while using this demand paging, when some programs are getting demand then data will be transferred.
+
+## 2. [Virtual and Physical Addresses](https://student.cs.uwaterloo.ca/~cs350/F06/slides/cs350_D.pdf)<br>
+
+Physical addresses are provided by the hardware, Virtual (or logical) addresses are provided by the OS kernel. OS divides physical memory into partitions. Different partitions can have different sizes
+
+## 3. [What is virtual memory?](https://techmonitor.ai/what-is/what-is-virtual-memory-4929986)<br>
+
+Virtual memory is a feature of an operating system that enables a computer to be able to compensate shortages of physical memory by transferring pages of data from random access memory to disk storage. This process is done temporarily and is designed to work as a combination of RAM and space on the hard disk. This means that when RAM runs low, virtual memory can move data from it to a space called a paging file. This process allows for RAM to be freed up so that a computer can complete the task.
+
+## 4. [How Big Should Your Page File or Swap Partition Be?](https://www.howtogeek.com/196238/how-big-should-your-page-file-or-swap-partition-be/)<br>
+
+According to an old rule of thumb, your page file or swap should be “double your RAM” or “1.5x your RAM.” But do you really need a 32 GB page file or swap if you have 16 GB of RAM?. You probably don’t need that much page file or swap space, which is a relief considering a modern computer might have a solid-state drive with very little space.
+
+## 5. [How to create and activate a paging file on the Linux command line](https://www.tremplin-numerique.org/en/how-to-create-and-activate-a-exchange-file-on-the-linux-command-line)<br>
+
+As you learn what a sawp file is and does, you will learn how to create and activate one on your Linux instance. Armed with this knowledge, you will be able to ensure that your system will no longer run out of memory.
+
+## 6. [What are the Page Replacement Algorithms?](https://afteracademy.com/blog/what-are-the-page-replacement-algorithms)<br>
+
+This lesson will introduce you to the concept of page replacement, which is used in memory management. You will understand the definition, need and various algorithms related to page replacement. A computer system has a limited amount of memory. Adding more memory physically is very costly. Therefore most modern computers use a combination of both hardware and software to allow the computer to address more memory than the amount physically present on the system. This extra memory is actually called Virtual Memory.
+
+## 7. [Page Replacement Algorithms in Operating Systems](https://www.geeksforgeeks.org/page-replacement-algorithms-in-operating-systems/)<br>
+
+In an operating system that uses paging for memory management, a page replacement algorithm is needed to decide which page needs to be replaced when new page comes in. 
+
+## 8. [What is Thrash?](https://www.javatpoint.com/what-is-thrash#:~:text=Thrashing%20is%20when%20the%20page,to%20be%20reduced%20or%20negligible.)<br>
+
+In computer science, thrash is the poor performance of a virtual memory (or paging) system when the same pages are being loaded repeatedly due to a lack of main memory to keep them in memory. Depending on the configuration and algorithm, the actual throughput of a system can degrade by multiple orders of magnitude. 
+
+In computer science, thrashing occurs when a computer's virtual memory resources are overused, leading to a constant state of paging and page faults, inhibiting most application-level processing. It causes the performance of the computer to degrade or collapse. The situation can continue indefinitely until the user closes some running applications or the active processes free up additional virtual memory resources.
+
+## 9. [Copy-on-Write in Operating System](https://www.studytonight.com/operating-system/copyonwrite-in-operating-system)<br>
+
+Copy-on-Write(CoW) is mainly a resource management technique that allows the parent and child process to share the same pages of the memory initially. If any process either parent or child modifies the shared page, only then the page is copied.
+
+The CoW is basically a technique of efficiently copying the data resources in the computer system. In this case, if a unit of data is copied but is not modified then "copy" can mainly exist as a reference to the original data.
+
+## 10. [NUMA (non-uniform memory access)](https://www.makeuseof.com/tag/linux-windows-ram/)<br>
+
+NUMA (non-uniform memory access) is a method of configuring a cluster of microprocessor in a multiprocessing system so that they can share memory locally, improving performance and the ability of the system to be expanded. NUMA is used in a symmetric multiprocessing ( SMP ) system. An SMP system is a "tightly-coupled," "share everything" system in which multiple processors working under a single operating system access each other's memory over a common bus or "interconnect" path. Ordinarily, a limitation of SMP is that as microprocessors are added, the shared bus or data path get overloaded and becomes a performance bottleneck. NUMA adds an intermediate level of memory shared among a few microprocessors so that all data accesses don't have to travel on the main bus.
