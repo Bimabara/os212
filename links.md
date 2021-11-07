@@ -238,3 +238,50 @@ The exec family of system calls replaces the program executed by a process. When
 
 This web explain about USING MAKEFILES AND THE SECOND-STAGE BOOTLOADER.
 
+# Week 7
+
+## 1. [What is Semaphore?](https://www.guru99.com/semaphore-in-operating-system.html)<br>
+
+Semaphore is simply a variable that is non-negative and shared between threads. A semaphore is a signaling mechanism, and a thread that is waiting on a semaphore can be signaled by another thread. It uses two atomic operations, 1)wait, and 2) signal for the process synchronization.
+
+## 2. [Introduction to DEADLOCK](https://www.guru99.com/deadlock-in-operating-system.html)<br>
+
+Deadlock is a situation that occurs in OS when any process enters a waiting state because another waiting process is holding the demanded resource. Deadlock is a common problem in multi-processing where several processes share a specific type of mutually exclusive resource known as a soft lock or software.
+
+## 3. [What is a starvation problem in an operating system?](https://www.educative.io/edpresso/what-is-a-starvation-problem-in-an-operating-system)<br>
+
+Starvation is the problem that occurs when low priority processes get jammed for an unspecified time as the high priority processes keep executing. A steady stream of higher-priority methods will stop a low-priority process from ever obtaining the processor. Starvation happens if a method is indefinitely delayed. This can emerge once a method needs a further resource for execution that isn’t assigned.
+
+## 4. [Difference between Deadlock and Starvation](https://www.javatpoint.com/deadlock-vs-starvation)<br>
+
+Deadlock and starvation are conditions in which the processes requesting a resource have been delayed for a long time. However, deadlock and starvation are not the same things in many ways. Deadlock happens when every process holds a resource and waits for another process to hold another resource. In contrast, in starvation, the processes with high priorities continuously consume resources, preventing low priority processes from acquiring resources.
+In this article, you will learn the difference between deadlock and starvation. But before discussing the difference between deadlock and starvation, you must need to learn about deadlock and starvation.
+
+## 5. [Process Synchronization](https://www.studytonight.com/operating-system/process-synchronization)<br>
+
+In this tutorial, we will be covering the concept of Process synchronization in an Operating System.
+
+Process Synchronization was introduced to handle problems that arose while multiple process executions.
+
+Process is categorized into two types on the basis of synchronization, Independent Process and Cooperative Process.
+
+## 6. [Paterson Solution](https://www.javatpoint.com/os-paterson-solution)<br>
+
+Peterson's algorithm (or Peterson's solution) is a concurrent programming algorithm for mutual exclusion that allows two or more processes to share a single-use resource without conflict, using only shared memory for communication. It was formulated by Gary L. Peterson in 1981.[1] While Peterson's original formulation worked with only two processes, the algorithm can be generalized for more than two.
+
+## 7. [The Critical Section Problem](https://www.javatpoint.com/os-critical-section-problem)<br>
+
+Critical Section is the part of a program which tries to access shared resources. That resource may be any resource in a computer like a memory location, Data structure, CPU or any IO device. The critical section cannot be executed by more than one process at the same time; operating system faces the difficulties in allowing and disallowing the processes from entering the critical section. The critical section problem is used to design a set of protocols which can ensure that the Race condition among the processes will never arise. In order to synchronize the cooperative processes, our main task is to solve the critical section problem. We need to provide a solution in such a way that the following conditions can be satisfied.
+
+
+## 8. [Banker's Algorithm](https://www.javatpoint.com/bankers-algorithm-in-operating-system)<br>
+
+It is a banker algorithm used to avoid deadlock and allocate resources safely to each process in the computer system. The 'S-State' examines all possible tests or activities before deciding whether the allocation should be allowed to each process. It also helps the operating system to successfully share the resources between all the processes. The banker's algorithm is named because it checks whether a person should be sanctioned a loan amount or not to help the bank system safely simulate allocation resources. 
+
+## 9. [Mutex – Mutual Exclusion Object](https://www.webopedia.com/definitions/mutex/)<br>
+
+In computer programming, a mutual exclusion object (mutex) is a program object that allows multiple program threads to share the same resource, such as file access, but not simultaneously. When a program is started, a mutex is created with a unique name. After this stage, any thread that needs the resource must lock the mutex from other threads while it is using the resource. The mutex is set to unlock when the data is no longer needed or the routine is finished.
+
+## 10. [Mutex vs Semaphore: What’s the Difference?](https://www.guru99.com/mutex-vs-semaphore.html)<br>
+
+In this web, we can learn abaout Use of Semaphore and Mutex, Difference between Semaphore vs. Mutex, Common Facts about Mutex and Semaphore, Advantages and Disadvantage of Mutex and Semaphore.
