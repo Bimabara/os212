@@ -29,3 +29,9 @@ ZCZC W05 ezekielnicholas
 ZCZC W06 Feibs
 ZCZC W06 ferdifdi
 ZCZC W06 figoathallah
+
+#Week 7
+
+ZCZC W07 hakimamarullah
+ZCZC W07 halifmuhammad
+ZCZC W07 haikalrmn
