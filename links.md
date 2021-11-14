@@ -285,3 +285,62 @@ In computer programming, a mutual exclusion object (mutex) is a program object t
 ## 10. [Mutex vs Semaphore: What’s the Difference?](https://www.guru99.com/mutex-vs-semaphore.html)<br>
 
 In this web, we can learn abaout Use of Semaphore and Mutex, Difference between Semaphore vs. Mutex, Common Facts about Mutex and Semaphore, Advantages and Disadvantage of Mutex and Semaphore.
+
+
+# Week 8
+
+## 1. [Process Scheduling]( https://www.tutorialspoint.com/operating_system/os_process_scheduling.htm#:~:text=Definition,of%20a%20Multiprogramming%20operating%20systems.)<br>
+
+The process scheduling is the activity of the process manager that handles the removal of the running process from the CPU and the selection of another process on the basis of a particular strategy.
+
+Process scheduling is an essential part of a Multiprogramming operating systems. Such operating systems allow more than one process to be loaded into the executable memory at a time and the loaded process shares the CPU using time multiplexing.
+
+## 2. [Scheduling algorithms]( https://www.tutorialspoint.com/operating_system/os_process_scheduling_algorithms.htm)<br>
+
+A Process Scheduler schedules different processes to be assigned to the CPU based on particular scheduling algorithms. There are six popular process scheduling algorithms which we are going to discuss in this chapter −
+
+First-Come, First-Served (FCFS) Scheduling
+Shortest-Job-Next (SJN) Scheduling
+Priority Scheduling
+Shortest Remaining Time
+Round Robin(RR) Scheduling
+Multiple-Level Queues Scheduling
+
+## 3. [difference between Preemptive and Non-Preemptive scheduling]( https://afteracademy.com/blog/what-is-the-difference-between-preemptive-and-non-preemptive-scheduling)<br>
+
+In the Operating System, the process scheduling algorithms can be divided into two broad categories i.e. Preemptive Scheduling and Non-Preemptive Scheduling. In this blog, we will learn the difference between these two.
+
+## 4. [Big O Notation Explained]( https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/)<br>
+
+In this article, we will have an in-depth discussion about Big O notation. We will start with an example algorithm to open up our understanding. Then, we will go into the mathematics a little bit to have a formal understanding. After that we will go over some common variations of Big O notation. In the end, we will discuss some of the limitations of Big O in a practical scenario. A table of contents can be found below.
+
+## 5. [Process State Models]( https://slaystudy.com/process-state-models-in-operating-system/)<br>
+
+When a process is first created by the OS, it initializes the program control block for the process and the new process enters the system in Not-running state. After some time, the currently running process will be interrupted by some events, and the OS will move the currently running process from Running state to Not-running state. The dispatcher then selects one process from Not-running processes and moves the process to the Running state for execution.
+
+## 6. [Multiple Processors Scheduling]( https://www.javatpoint.com/multiple-processors-scheduling-in-operating-system)<br>
+
+Multiple processor scheduling or multiprocessor scheduling focuses on designing the system's scheduling function, which consists of more than one processor. Multiple CPUs share the load (load sharing) in multiprocessor scheduling so that various processes run simultaneously. In general, multiprocessor scheduling is complex as compared to single processor scheduling. In the multiprocessor scheduling, there are many processors, and they are identical, and we can run any process at any time.
+
+The multiple CPUs in the system are in close communication, which shares a common bus, memory, and other peripheral devices. So we can say that the system is tightly coupled. These systems are used when we want to process a bulk amount of data, and these systems are mainly used in satellite, weather forecasting, etc.
+
+## 7. [CPU Scheduling]( https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6_CPU_Scheduling.html)<br>
+
+Almost all programs have some alternating cycle of CPU number crunching and waiting for I/O of some kind. ( Even a simple fetch from memory takes a long time relative to CPU speeds. )
+In a simple system running a single process, the time spent waiting for I/O is wasted, and those CPU cycles are lost forever.
+A scheduling system allows one process to use the CPU while another is waiting for I/O, thereby making full use of otherwise lost CPU cycles.
+The challenge is to make the overall system as "efficient" and "fair" as possible, subject to varying and often dynamic conditions, and where "efficient" and "fair" are somewhat subjective terms, often subject to shifting priority policies.
+
+## 8. [What is Burst time, Arrival time, Exit time, Response time, Waiting time, Turnaround time, and Throughput?]( https://afteracademy.com/blog/what-is-burst-arrival-exit-response-waiting-turnaround-time-and-throughput)<br>
+
+When we are dealing with some CPU scheduling algorithms then we encounter with some confusing terms like Burst time, Arrival time, Exit time, Waiting time, Response time, Turnaround time, and throughput. These parameters are used to find the performance of a system. So, in this blog, we will learn about these parameters. Let's get started one by one.
+
+## 9. [Deadline Scheduling for Real-Time Systems]( https://study.com/academy/lesson/deadline-scheduling-for-real-time-systems.html)<br>
+
+Real-time systems (RTS) are carefully designed systems consisting of software and hardware used to capture and respond to events occurring in the real world. Like many computer systems, the RTS process must operate correctly, but it has an additional requirement in that it must act in a timely manner. If an automobile's RTS controlling your brakes do not act in a timely manner, it may cause a catastrophic event. To accomplish this goal, the design engineer must carefully select from a variety of real-time scheduling options available. 
+
+## 10. [Comparing real-time scheduling on the Linux kernel and an RTOS]( https://www.embedded.com/comparing-real-time-scheduling-on-the-linux-kernel-and-an-rtos/#:~:text=In%20a%20real%20time%20kernel,block%2C%20mutex%2C%20semaphone%E2%80%A6%20))<br>
+
+By default, the Linux kernel build used in the many open source distributions is the normal/default kernel which doesn’t support real time scheduling. If an embedded developer wants to compare the scheduling policies of Linux to a real time operating system it is more useful to compare RTOS performance to a version of Linux that does have real-time features.
+
+Fortunately, in addition to this default kernel, there is also available a Real-time kernel version that supports a real-time scheduling policy. In this article and in the code examples that are included, an effort is made to compare the real time operations of standard and real-time Linux with normal RTOS operation and evaluate the differences and similarities.
