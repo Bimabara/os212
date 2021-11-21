@@ -380,7 +380,7 @@ UEFI stands for Unified Extensible Firmware Interface. It is the successor of BI
 
 Like LILO, the GRUB boot loader can load other operating systems in addition to Linux. GRUB was written by Erich Boleyn to boot operating systems on PC-based hardware, and is now developed and maintained by the GNU project. GRUB was intended to boot operating systems that conform to the Multiboot Specification, which was designed to create one booting method that would work on any conforming PC-based operating system. In addition to multiboot-conforming systems, GRUB can boot directly to Linux, FreeBSD, OpenBSD, and NetBSD. It can also boot other operating systems such as Microsoft Windows indirectly, through the use of a chainloader . The chainloader loads an intermediate file, and that file loads the operating system’s boot loader.
 
-## 8. [The Boot Process, Init, and Shutdown]( https://ftp.kh.edu.tw/Linux/Redhat/en_6.2/doc/ref-guide/s1-sysadmin-boot.html)<br>
+## 8. [The Boot Process, Init, and Shutdown]( https://ftp.kh.edu.tw/Linux/Redhat/en_6.2/doc/ref-guide/s1-sysadmin-boot.htm)<br>
 
 When a computer is booted, the processor looks at the end of the system memory for the BIOS (Basic Input/Output System) and runs it. The BIOS program is written into read-only permanent memory, and is always ready to go. The BIOS provides the lowest level interface to peripheral devices and controls the first step of the boot process.
 
