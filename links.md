@@ -344,3 +344,60 @@ Real-time systems (RTS) are carefully designed systems consisting of software an
 By default, the Linux kernel build used in the many open source distributions is the normal/default kernel which doesn’t support real time scheduling. If an embedded developer wants to compare the scheduling policies of Linux to a real time operating system it is more useful to compare RTOS performance to a version of Linux that does have real-time features.
 
 Fortunately, in addition to this default kernel, there is also available a Real-time kernel version that supports a real-time scheduling policy. In this article and in the code examples that are included, an effort is made to compare the real time operations of standard and real-time Linux with normal RTOS operation and evaluate the differences and similarities.
+
+
+# Week 9
+
+## 1. [Computer Storage Structure]( https://www.tutorialspoint.com/Computer-Storage-Structure)<br>
+Computer Storage contains many computer components that are used to store data. It is traditionally divided into primary storage, secondary storage and tertiary storage.
+
+## 2. [Bootloader: What you need to know about the system boot manager]( https://www.ionos.com/digitalguide/server/configuration/what-is-a-bootloader/#:~:text=A%20bootloader%2C%20also%20known%20as,a%20computer%20after%20start%2Dup.&text=The%20boot%20medium%20receives%20information,about%20where%20the%20bootloader%20is.)<br>
+
+A bootloader, also known as a boot program or bootstrap loader, is a special operating system software that loads into the working memory of a computer after start-up. For this purpose, immediately after a device starts, a bootloader is generally launched by a bootable medium like a hard drive, a CD/DVD or a USB stick. The boot medium receives information from the computer’s firmware (e.g. BIOS) about where the bootloader is. The whole process is also described as “booting”.
+
+## 3. [What Is The Difference Between Bootloader And Firmware?]( https://jillian-greenberg.com/qa/question-what-is-the-difference-between-bootloader-and-firmware.html)<br>
+
+Firmware: a small footprint software usually found in embedded devices. … Bootloader: part of the firmware usually ran during the boot sequence which allows to load a new firmware to update it from SPI, USB, CAN…
+Firmware assumes an intermediary role between the hardware and software – including potential future upgrades of the software. Some firmware (such as the BIOS on a PC) does the job of booting up a computer by initialising the hardware components and loading the operating system.
+
+## 4. [Systemd]( https://systemd.io/)<br>
+
+systemd is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system.
+
+systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control groups, maintains mount and automount points, and implements an elaborate transactional dependency-based service control logic. systemd supports SysV and LSB init scripts and works as a replacement for sysvinit.
+
+## 5. [RAID (redundant array of independent disks)]( https://searchstorage.techtarget.com/definition/RAID)<br>
+
+RAID (redundant array of independent disks) is a way of storing the same data in different places on multiple hard disks or solid-state drives (SSDs) to protect data in the case of a drive failure. There are different RAID levels, however, and not all have the goal of providing redundancy.
+
+## 6. [What is UEFI and Legacy BIOS?UEFI vs Legacy BIOS?]( https://ourtechroom.com/tech/uefi-vs-legacy-bios/)<br>
+
+BIOS is an important part of the CPU. When you power on your computer at first the Processor starts doing its work, and at first, the processor calls BIOS firmware, and BIOS gets activated and BIOS will do POST checked to initialize and identify the hardware like hard disks, RAM, peripheral devices, GPU, DMA Controllers and many more. And if all is ok then BIOS will load the first sector of each storage device and loads in memory and scans for valid MBR. If the master boot record(MBR) is found then it will execute the boot loader low-level code present in MBR, which allows the user to select a partition to boot from. If not found first, it proceeds to the next device in the boot order (set in BIOS).
+
+UEFI stands for Unified Extensible Firmware Interface. It is the successor of BIOS, not a replacement. It is user-friendly GUI-based BIOS. The task of both BIOS and UEFI are the same and the main difference lies in the location of the firmware code, how they prepare the system before handling to OS, and what convenience it offers for calling the code while the system is running. in addition to that, it also has advance and features like a secure boot which will discuss later.
+
+## 7. [GRUB: The Grand Unified Bootloader]( https://www.oreilly.com/library/view/linux-in-a/0596004826/ch04s03.html)<br>
+
+Like LILO, the GRUB boot loader can load other operating systems in addition to Linux. GRUB was written by Erich Boleyn to boot operating systems on PC-based hardware, and is now developed and maintained by the GNU project. GRUB was intended to boot operating systems that conform to the Multiboot Specification, which was designed to create one booting method that would work on any conforming PC-based operating system. In addition to multiboot-conforming systems, GRUB can boot directly to Linux, FreeBSD, OpenBSD, and NetBSD. It can also boot other operating systems such as Microsoft Windows indirectly, through the use of a chainloader . The chainloader loads an intermediate file, and that file loads the operating system’s boot loader.
+
+## 8. [The Boot Process, Init, and Shutdown]( https://ftp.kh.edu.tw/Linux/Redhat/en_6.2/doc/ref-guide/s1-sysadmin-boot.htm)<br>
+
+When a computer is booted, the processor looks at the end of the system memory for the BIOS (Basic Input/Output System) and runs it. The BIOS program is written into read-only permanent memory, and is always ready to go. The BIOS provides the lowest level interface to peripheral devices and controls the first step of the boot process.
+
+The BIOS tests the system, looks for and checks peripherals and then looks for a drive to boot from. Usually, it checks the floppy drive (or CD-ROM drive on many newer systems), if present, and then it looks on the hard drive. On the hard drive, the BIOS looks for a Master Boot Record (MBR) starting at the first sector on the first hard drive and starts the MBR running.
+
+The MBR looks for the first active partition and reads the partition's boot record. The boot record contains instructions on how to load the boot loader, LILO (LInux LOader). The MBR then loads LILO and LILO takes over the process.
+
+LILO reads the file /etc/lilo.conf, which spells out which operating system(s) to configure or which kernel to start and where to install itself (for example, /dev/hda for your hard drive). LILO displays a LILO: prompt on the screen and waits for a preset period of time (also set in the lilo.conf file) for input from the user. If your lilo.conf is set to give LILO a choice of operating systems, at this time you could type in the label for whichever OS you wanted to boot.
+
+After waiting for a set period of time (five seconds is common), LILO proceeds to boot whichever operating system appears first in the lilo.conf file.
+
+If LILO is booting Linux, it first boots the kernel, which is a vmlinuz file (plus a version number, for example, vmlinuz-2.2.15-xx) located in the /boot directory. Then the kernel takes over.
+
+## 9. [The Upstart Event Systemhttps://www.digitalocean.com/community/tutorials/the-upstart-event-system-what-it-is-and-how-to-use-it)<br>
+
+Designed with flexibility from the beginning, the Upstart event system utilizes a variety of concepts that differ from conventional initialization systems. The solution is installed by default on Red Hat Enterprise Linux (RHEL) 6, as well as Google’s Chrome OS, and Ubuntu, although recent debate has caused confusion over whether this will continue. 
+
+## 10. [What is Systemctl in Linux]( https://ostoday.org/linux/quick-answer-what-is-systemctl-in-linux.html)<br>
+
+The systemctl command is a utility which is responsible for examining and controlling the systemd system and service manager. It is a collection of system management libraries, utilities and daemons which function as a successor to the System V init daemon. Systemctl is used to examine and control the state of “systemd” system and service manager. systemd is system and service manager for Unix like operating systems(most of the distributions, not all).
