@@ -380,7 +380,7 @@ UEFI stands for Unified Extensible Firmware Interface. It is the successor of BI
 
 Like LILO, the GRUB boot loader can load other operating systems in addition to Linux. GRUB was written by Erich Boleyn to boot operating systems on PC-based hardware, and is now developed and maintained by the GNU project. GRUB was intended to boot operating systems that conform to the Multiboot Specification, which was designed to create one booting method that would work on any conforming PC-based operating system. In addition to multiboot-conforming systems, GRUB can boot directly to Linux, FreeBSD, OpenBSD, and NetBSD. It can also boot other operating systems such as Microsoft Windows indirectly, through the use of a chainloader . The chainloader loads an intermediate file, and that file loads the operating system’s boot loader.
 
-## 8. [The Boot Process, Init, and Shutdown]( https://ftp.kh.edu.tw/Linux/Redhat/en_6.2/doc/ref-guide/s1-sysadmin-boot.htm)<br>
+## 8. [The Boot Process, Init, and Shutdown]( https://ftp.kh.edu.tw/Linux/Redhat/en_6.2/doc/ref-guide/s1-sysadmin-boot.html)<br>
 
 When a computer is booted, the processor looks at the end of the system memory for the BIOS (Basic Input/Output System) and runs it. The BIOS program is written into read-only permanent memory, and is always ready to go. The BIOS provides the lowest level interface to peripheral devices and controls the first step of the boot process.
 
@@ -394,7 +394,7 @@ After waiting for a set period of time (five seconds is common), LILO proceeds t
 
 If LILO is booting Linux, it first boots the kernel, which is a vmlinuz file (plus a version number, for example, vmlinuz-2.2.15-xx) located in the /boot directory. Then the kernel takes over.
 
-## 9. [The Upstart Event Systemhttps://www.digitalocean.com/community/tutorials/the-upstart-event-system-what-it-is-and-how-to-use-it)<br>
+## 9. [The Upstart Event System](https://www.digitalocean.com/community/tutorials/the-upstart-event-system-what-it-is-and-how-to-use-it)<br>
 
 Designed with flexibility from the beginning, the Upstart event system utilizes a variety of concepts that differ from conventional initialization systems. The solution is installed by default on Red Hat Enterprise Linux (RHEL) 6, as well as Google’s Chrome OS, and Ubuntu, although recent debate has caused confusion over whether this will continue. 
 
