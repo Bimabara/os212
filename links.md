@@ -401,3 +401,57 @@ Designed with flexibility from the beginning, the Upstart event system utilizes 
 ## 10. [What is Systemctl in Linux]( https://ostoday.org/linux/quick-answer-what-is-systemctl-in-linux.html)<br>
 
 The systemctl command is a utility which is responsible for examining and controlling the systemd system and service manager. It is a collection of system management libraries, utilities and daemons which function as a successor to the System V init daemon. Systemctl is used to examine and control the state of “systemd” system and service manager. systemd is system and service manager for Unix like operating systems(most of the distributions, not all).
+
+
+# Week 10
+
+## 1. [I/O]( https://www.tutorialspoint.com/operating_system/os_io_hardware.htm)<br>
+One of the important jobs of an Operating System is to manage various I/O devices including mouse, keyboards, touch pad, disk drives, display adapters, USB devices, Bit-mapped screen, LED, Analog-to-digital converter, On/off switch, network connections, audio I/O, printers etc.
+
+An I/O system is required to take an application I/O request and send it to the physical device, then take whatever response comes back from the device and send it to the application. I/O devices can be divided into two categories 
+
+## 2. [Platform Controller Hub](https://www.wikiwand.com/en/Platform_Controller_Hub)<br>
+
+The PCH controls certain data paths and support functions used in conjunction with Intel CPUs. These include clocking (the system clock), Flexible Display Interface (FDI) and Direct Media Interface (DMI), although FDI is used only when the chipset is required to support a processor with integrated graphics. As such, I/O functions are reassigned between this new central hub and the CPU compared to the previous architecture: some northbridge functions, the memory controller and PCI-e lanes, were integrated into the CPU while the PCH took over the remaining functions in addition to the traditional roles of the southbridge. AMD has its equivalent for the PCH, known simply as a chipset, no longer using the previous term Fusion controller hub since the release of the Zen architecture in 2017.
+
+## 3. [I/O Controller Hub](https://www.wikiwand.com/en/I/O_Controller_Hub)<br>
+
+I/O Controller Hub (ICH) is a family of Intel southbridge microchips used to manage data communications between a CPU and a motherboard, specifically Intel chipsets based on the Intel Hub Architecture. It is designed to be paired with a second support chip known as a northbridge. As with any other southbridge, the ICH is used to connect and control peripheral devices.
+
+As CPU speeds increased data transmission between the CPU and support chipset, the support chipset eventually emerged as a bottleneck between the processor and the motherboard. Accordingly, starting with the Intel 5 Series, a new architecture was used that incorporated some functions of the traditional north and south bridge chips onto the CPU itself, with the remaining functions being consolidated into a single Platform Controller Hub (PCH). This replaces the traditional two chip setup.
+
+## 4. [Socket]( https://www.techopedia.com/definition/16208/socket#:~:text=A%20socket%20is%20a%20software,the%20operating%20system(OS).)<br>
+
+A socket is a software object that acts as an end point establishing a bidirectional network communication link between a server-side and a client-side program.
+In UNIX, a socket can also be referred to as an endpoint for interprocess communication(IPC) within the operating system(OS).
+In Java, socket classes represent the communication between client and server programs. Socket classes handle client-side communication, and server socket classes handle server-side communication
+
+## 5. [Processor Sockets – Intel and AMD Socket Types)]( https://www.pcbuyerbeware.co.uk/hardware/processors/processor-sockets/#:~:text=AMD%20has%20always%20used%20pins,shown%20in%20the%20image%20above.)<br>
+
+The pace at which the socket types have been changing has slowed down considerably since the heyday of the desktop PC, which is in decline compared to tablet PCs and smartphones, now enjoying their heyday.
+Desktop and laptop PCs becoming redundant any time soon. I would much rather have a laptop PC than any tablet and I use a desktop PC at home. Laptops are still relatively expensive. If I want to upgrade my desktop PC to the latest hardware, I just have to back up my files and go online and buy a motherboard, processor and RAM bundle costing about £150. Then it’s just a question of reinstalling Windows, my software and restoring my files. Microsoft’s ISO download of Windows 10 is always right up to date. Gone are the days when you had to create a ‘slipstreamed’ install disc that added Service Packs to an earlier Windows install disc.
+
+## 6. [Kernel I/O Subsystem](https://iim6.tripod.com/ibam-os-html/x6158.html)<br>
+
+Kernel menyediakan banyak service yang berhubungan dengan I/O. Pada bagian ini, kita akan mendeskripsikan beberapa service yang disediakan oleh kernel I/O subsystem, dan kita akan membahas bagaimana caranya membuat infrastruktur hardware dan device-driver. Service yang akan kita bahas adalah I/O scheduling, buffering, caching, spooling, reservasi device, error handling.
+
+## 7. [STREAMS]( https://www.oreilly.com/library/view/linux-in-a/0596004826/ch04s03.html)<br>
+
+The streams mechanism in UNIX provides a bi-directional pipeline between a user process and a device driver, onto which additional modules can be added.
+The user process interacts with the stream head.
+The device driver interacts with the device end.
+Zero or more stream modules can be pushed onto the stream, using ioctl( ). These modules may filter and/or modify the data as it passes through the stream.
+
+## 8. [Non-Maskable Interrupt ](https://www.techopedia.com/definition/11985/non-maskable-interrupt-nmi)<br>
+
+A non-maskable interrupt (NMI) is a type of hardware interrupt (or signal to the processor) that prioritizes a certain thread or process. Unlike other types of interrupts, the non-maskable interrupt cannot be ignored through the use of interrupt masking techniques.
+
+## 9. [Difference Between Maskable and Non-Maskable Interrupt](https://byjus.com/gate/difference-between-maskable-and-non-maskable-interrupt/)<br>
+
+The term interrupt refers to an event that any component of a computer causes (other than its CPU). Interrupt designates as the CPU of any event that is external and requires immediate attention from the system. The occurrence of Interrupts is asynchronous. There are two basic types of interrupts, namely non-maskable and maskable interrupts.
+A Maskable Interrupt is the one that is capable of ignoring/ enabling the instructions of the system’s CPU alone. One can easily trigger such interrupts in two major ways. Thus, they are either level-triggered or edge-triggered.
+The type of interrupt that the instructions of a system’s CPU can easily ignore or disable is known as Non-Maskable Interrupt. Such a type of interrupt usually comes into play when the response time is very critical.
+
+## 10. [How PCI Works](https://computer.howstuffworks.com/pci.htm)<br>
+
+The power and speed of computer components has increased at a steady rate since desktop computers were first developed decades ago. Software makers create new applications capable of utilizing the latest advances in processor speed and hard drive capacity, while hardware makers rush to improve components and design new technologies to keep up with the demands of high-end software.
